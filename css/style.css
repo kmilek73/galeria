@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #222;
+	color: #eee;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+#gallery {
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+figure {
+	display: inline-block;
+	width: 338px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+figure figcaption {
+	text-align: center;
+}
+
+figure img{
+	width: 100%;
+	border: 2px solid #444;
+}
+
+
+@media  (max-width: 480px){
+	#gallery {
+	width: 100%;
+	}} 
+
+@media  (min-width: 480px) and (max-width:768px){
+				#gallery {
+				width: 100%;
+				}} 
+
+@media (min-width:768px) and (max-width:992px) {
+				#gallery {
+				width: 100%;
+				}}
+
+/* 4.Dodaj odpowiednie warunki w media queries, które sprawią, że obrazki w galerii będą w trzech 
+kolumnach dla urządzeń z dużym wyświetlaczem (powyżej 992px), w dwóch dla urządzeń ze średnim 
+wyświetlaczem (powyżej 768px do 992px) i w jednej kolumnie dla urządzeń z 
+małym wyświetlaczem (dla 768px i poniżej)
+
+5.Dla urządzeń z bardzo małym wyświetlaczem (poniżej 480px) główna sekcja oraz obrazki w galerii mają mieć 
+całe 100% szerokości ekranu */
